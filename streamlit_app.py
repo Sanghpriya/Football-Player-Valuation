@@ -87,7 +87,7 @@ def load_data():
 
     # Load mapping cleanly from your JSON file
     try:
-        with open('notebooks\\team_target_encoding.json', 'r') as f:
+        with open('team_target_encoding.json', 'r') as f:
             team_mapping = json.load(f)
     except FileNotFoundError:
         st.warning("team_target_encoding.json not found, attempting to extract from CSV...")
